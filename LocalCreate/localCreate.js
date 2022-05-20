@@ -78,7 +78,7 @@ ops.setAcceptInsecureCerts(true);
     let localNumero = Math.floor(Math.random() * 100000000) + 900000000;
     await driver.findElement(By.id("mat-input-23")).sendKeys(localNumero);
     await driver.findElement(By.id("mat-select-2")).click();
-    await driver.findElement(By.id("mat-option-12")).click();
+    await driver.findElement(By.xpath("//span[contains(text(), 'Metropolitana de Santiago')]")).click();
     await driver.sleep(500);
     await driver.findElement(By.id("mat-select-4")).click();
     await driver.findElement(By.xpath("//span[contains(text(), 'Puente Alto')]")).click();
